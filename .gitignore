@@ -1,0 +1,26 @@
+# Ignorar todas as pastas output
+**/output/
+
+# Ignorar binários e arquivos compilados
+*.exe
+*.o
+*.out
+*.class
+
+# Ignorar arquivos temporários
+*.log
+*.tmp
+*.bak
+
+# Ignorar pastas de build (caso use alguma IDE)
+build/
+bin/
+out/
+
+# Ignorar arquivos de configuração de IDE
+.vscode/
+.idea/
+
+# Ignorar arquivos do sistema
+.DS_Store
+Thumbs.db
