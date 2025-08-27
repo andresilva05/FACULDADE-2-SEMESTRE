@@ -1,0 +1,26 @@
+✍ Resumo Enxuto (para anotar à mão)
+
+Ponteiros = variáveis que guardam endereços.
+Ex.: int *p = &x; → p guarda endereço de x.
+
+Por que usar? Arrays, strings, memória dinâmica, passagem por referência.
+
+Passagem de argumentos:
+✔ Por Valor → copia o valor → não altera original.
+✔ Por Referência → usa endereço (ponteiro) → altera original.
+
+Exemplo por Valor:
+
+int cubo(int n) { return n*n*n; }
+
+
+Exemplo por Referência:
+
+void cubo(int *n) { *n = (*n)*(*n)*(*n); }
+
+
+Diferença:
+
+Valor = cópia
+
+Referência = endereço
