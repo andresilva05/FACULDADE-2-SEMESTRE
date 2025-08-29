@@ -4,7 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f2d9cc6-e538-4fe1-ba54-3faeddcf1481" name="Changes" comment="feat: adiciona exemplos iniciais de Java com POO (classe Livro e cadastro), e teste realizado em casa para praticar." />
+    <list default="true" id="27b64ba3-6b00-4cde-a965-c330a94bbddc" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/src/fundamentos_java_28_08/Area.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/src/fundamentos_java_28_08/CoordenadasPonto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/src/fundamentos_java_28_08/Intervalo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/src/fundamentos_java_28_08/MediaPonderada.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/src/fundamentos_java_28_08/ProdutoSimples.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MeuPrimeiroPrograma.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resumo-Introducao-Java.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/poo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/poo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aula1/Livro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aula1/MeuPrimeiroPrograma.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aula1/cadastroDeLivros.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aula1/praticando_em_casa/Aluno.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aula1/praticando_em_casa/cadastroAlunos.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,60 +49,49 @@
   }
 }</component>
   <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 3
 }</component>
-  <component name="ProjectId" id="31cVWXW38NYfTTvZicmzeWKJSt7" />
+  <component name="ProjectId" id="31w4F9hYYl2SxPIUC53L9qys1Zc" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Area.executor": "Run",
     "Application.CadastroDeLivros.executor": "Run",
-    "Application.MeuPrimeiroPrograma.executor": "Run",
-    "Application.cadastroAlunos.executor": "Debug",
-    "Application.cadastroDeLivros.executor": "Run",
+    "Application.CoordenadasPonto.executor": "Run",
+    "Application.Intervalo.executor": "Run",
+    "Application.MediaPonderada.executor": "Run",
+    "Application.ProdutoSimples.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "onboarding.tips.debug.path": "I:/Meu Drive/FACULDADE/2 SEMESTRE/poo/src/Main.java"
+    "last_opened_file_path": "I:/Meu Drive/FACULDADE/2 SEMESTRE/poo",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="I:\Meu Drive\FACULDADE\2 SEMESTRE\poo\src\introducao-java-21-08" />
+      <recent name="I:\Meu Drive\FACULDADE\2 SEMESTRE\poo\src" />
+      <recent name="I:\Meu Drive\FACULDADE\2 SEMESTRE\poo\fundamentos-java-28-08" />
+    </key>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="8f2d9cc6-e538-4fe1-ba54-3faeddcf1481" name="Changes" comment="" />
-      <created>1755823387849</created>
+      <changelist id="27b64ba3-6b00-4cde-a965-c330a94bbddc" name="Changes" comment="" />
+      <created>1756421703428</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1755823387849</updated>
+      <updated>1756421703428</updated>
     </task>
-    <task id="LOCAL-00001" summary="feat: adiciona exemplos iniciais de Java com POO (classe Livro e cadastro), e teste realizado em casa para praticar.">
-      <option name="closed" value="true" />
-      <created>1756085023024</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1756085023025</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: adiciona exemplos iniciais de Java com POO (classe Livro e cadastro), e teste realizado em casa para praticar." />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: adiciona exemplos iniciais de Java com POO (classe Livro e cadastro), e teste realizado em casa para praticar." />
   </component>
 </project>
