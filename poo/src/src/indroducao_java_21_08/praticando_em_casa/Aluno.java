@@ -1,4 +1,4 @@
-package aula1.praticando_em_casa;
+package indroducao_java_21_08.praticando_em_casa;
 
 public class Aluno {
     String nome;
