@@ -1,0 +1,36 @@
+<!-- 4. Peça o preço e a quantidade de um produto. Mostre o preço total, conforme o exemplo. 
+Ex: Você comprou 5 produtos. Total: R$ 50.0 -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Compras</title>
+  </head>
+  <body>
+    <h1 id="compras"></h1>
+
+    <script>
+      // Lê o valor do produto comprado.
+      const valorProduto = Number(
+        prompt("Informe o valor do produto comprado:")
+      );
+      //Lê a quantidade do produto adquirido pelo cliete.
+      const qtdProduto = Number(
+        prompt("Informe a quantidade adquirida do produto:")
+      );
+
+      //Calcula valor total da compra.
+      const totalCompra = valorProduto * qtdProduto;
+
+      //Monta mensagem final com resultado.
+      const mensagem = `Você comprou ${qtdProduto} produtos. Total: R$ ${totalCompra.toFixed(
+        1
+      )}`;
+
+      //Exibe mensagem no elemento <h1>
+      document.querySelector("#compras").innerHTML = mensagem;
+    </script>
+  </body>
+</html>

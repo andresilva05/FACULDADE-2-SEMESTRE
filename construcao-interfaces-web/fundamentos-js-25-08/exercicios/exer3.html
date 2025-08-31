@@ -1,0 +1,28 @@
+<!-- 3. Peça um valor em metros e imprima-o em centímetros. 
+Ex: 5 metros equivalem a 500 centímetros -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conversão</title>
+  </head>
+  <body>
+    <h1 id="conversao"></h1>
+
+    <script>
+      // Lê o valor digitado em metros
+      const metros = Number(prompt("Digite um valor em metros:"));
+
+      // Calcula conversão de metros para centímetros.
+      const conversaoParaCentimetros = metros * 100;
+
+      // Monta a mensagem final com o resultado
+      const mensagem = ` 5 metro(s) equivalem a ${conversaoParaCentimetros} centímetros`;
+
+      // Exibe a mensagem no elemento <h1>
+      document.querySelector("#conversao").innerHTML = mensagem;
+    </script>
+  </body>
+</html>

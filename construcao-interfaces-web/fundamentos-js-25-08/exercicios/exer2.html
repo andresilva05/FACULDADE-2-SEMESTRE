@@ -1,0 +1,31 @@
+<!-- 2. Peça dois números e mostre o resultado da multiplicação de um pelo outro: 
+Ex: O resultado da multiplicação de 3 e 2 é 6 -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multiplicação</title>
+  </head>
+  <body>
+    <h1 id="multiplicacao"></h1>
+
+    <script>
+      // Lê o primeiro número informado pelo usuário
+      const num1 = Number(prompt("Digite o primeiro número:"));
+
+      // Lê o segundo número informado pelo usuário
+      const num2 = Number(prompt("Digite o segundo número:"));
+
+      // Calcula a multiplicação dos dois números
+      const resultadoMultiplicacao = num1 * num2;
+
+      // Monta a mensagem final com o resultado
+      const mensagem = `O resultado da multiplicação de ${num1} e ${num2} é ${resultadoMultiplicacao}`;
+
+      // Exibe a mensagem no elemento <h1>
+      document.querySelector("#multiplicacao").innerHTML = mensagem;
+    </script>
+  </body>
+</html>

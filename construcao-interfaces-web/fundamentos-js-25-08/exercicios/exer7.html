@@ -1,0 +1,28 @@
+<!-- 7. Peça nome e sobrenome. Mostre o nome completo da pessoa. 
+Ex: Seu nome completo é João da Silva -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exibe nome</title>
+  </head>
+  <body>
+    <h1 id="exibe_nome"></h1>
+
+    <script>
+      // Solicita o nome ao usuário
+      const nome = prompt("Digite seu nome: ");
+
+      // Solicita o sobrenome ao usuário
+      const sobrenome = prompt("Digite seu sobrenome: ");
+
+      // Concatena o nome e sobrenome e monta a mensagem
+      const mensagem = `Seu nome completo é ${nome + " " + sobrenome}`;
+
+      // Exibe a mensagem no elemento com id "exibe_nome"
+      document.querySelector("#exibe_nome").innerHTML = mensagem;
+    </script>
+  </body>
+</html>

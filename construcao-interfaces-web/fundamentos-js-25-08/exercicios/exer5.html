@@ -1,0 +1,26 @@
+<!-- 5. Peça o nome e o ano de nascimento. Calcule a idade aproximada (considerando o ano 
+atual igual a 2025). 
+Ex: Olá João, você tem aproximadamente 20 anos.  -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Informa idade</title>
+  </head>
+  <body>
+    <h1 id="idade"></h1>
+
+    <script>
+      const nome = prompt("Digite seu nome:");
+      const anoNascimento = Number(prompt("Informe seu ano de nascimento:"));
+
+      const idadeAprox = 2025 - anoNascimento;
+
+      const mensagem = `Olá ${nome}, você tem aproximadamente ${idadeAprox} anos.`;
+
+      document.querySelector("#idade").innerHTML = mensagem;
+    </script>
+  </body>
+</html>

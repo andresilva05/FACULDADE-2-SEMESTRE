@@ -1,0 +1,28 @@
+<!-- 9. Peça a temperatura em Celsius e converta para Fahrenheit, conforme a fórmula: 
+[F = C*9/5 + 32] -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Converte para Fahrenheit</title>
+  </head>
+  <body>
+    <h1 id="temperatura-fahrenhait"></h1>
+
+    <script>
+      // Solicita ao usuário que informe a temperatura em Celsius e converte para número
+      const celsius = Number(prompt("Informe tempêratura em Celsius:"));
+
+      // Calcula a temperatura em Fahrenheit usando a fórmula
+      const fahrenheit = (celsius * 9) / 5 + 32;
+
+      // Cria a mensagem de resultado da conversão
+      const mensagem = `A conversão de ${celsius}°C em Fahrenhait é ${fahrenheit}°F`;
+
+      // Exibe a mensagem no elemento com id 'temperatura-fahrenhait'
+      document.querySelector("#temperatura-fahrenhait").innerHTML = mensagem;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!-- 10. Peça o preço de um produto e o valor do desconto a ser aplicado (%). Mostre o preço 
+final. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desconto Produto</title>
+  </head>
+  <body>
+    <h1 id="valor_pagar"></h1>
+
+    <script>
+      // Solicita ao usuário o valor do produto
+      const preco = Number(prompt("Digite valor do produto:"));
+
+      // Solicita ao usuário a porcentagem de desconto
+      const porcDesconto = Number(
+        prompt("Digite o valor de desconto a ser aplicado")
+      );
+
+    // Calcula o preço com desconto aplicado
+    const precoComDesconto = preco * (1 - porcDesconto / 100);
+
+      // Cria a mensagem a ser exibida, formatando o valor final com duas casas decimais
+      const mensagem = `Valor a ser pago com desconto de ${porcDesconto}% é R$ ${precoComDesconto.toFixed(
+        2
+      )}`;
+
+      // Exibe a mensagem no elemento com id "valor_pagar"
+      document.querySelector("#valor_pagar").innerHTML = mensagem;
+    </script>
+  </body>
+</html>
