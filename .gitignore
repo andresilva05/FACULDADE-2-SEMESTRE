@@ -24,3 +24,5 @@ out/
 # Ignorar arquivos do sistema
 .DS_Store
 Thumbs.db
+
+*.pdf
