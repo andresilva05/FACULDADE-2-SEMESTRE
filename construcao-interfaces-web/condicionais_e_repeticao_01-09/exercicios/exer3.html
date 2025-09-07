@@ -1,0 +1,22 @@
+<!-- Solicite um número inteiro e exiba uma contagem regressiva até 0 com um while. -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contagem regressiva</title>
+  </head>
+  <body>
+    <p id="contagem"></p>
+    <script>
+      let numero = Number(prompt("Digite um numero:"));
+      while (numero >= 0) {
+
+
+        document.querySelector("#contagem").innerHTML += numero + "<br />";
+        numero--;
+      }
+    </script>
+  </body>
+</html>
