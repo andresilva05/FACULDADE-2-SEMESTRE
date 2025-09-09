@@ -1,0 +1,41 @@
+<!-- 10. Callback: Crie uma função calcular que receba dois números e uma função de
+callback (ex.: soma, subtração, multiplicação). A função deve aplicar o callback
+sobre os números. -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>callback</title>
+  </head>
+  <body>
+    <script>
+      // Função calcular recebe dois números e uma função de operação (callback)
+      const calcular = (num1, num2, operacao) => {
+        let simbolo;
+        // Define o símbolo da operação conforme o callback recebido
+        if (operacao === soma) simbolo = "+";
+        else if (operacao === subtracao) simbolo = "-";
+        else if (operacao === multiplicacao) simbolo = "×";
+
+        // Retorna uma string mostrando o cálculo e o resultado
+        return `${num1} ${simbolo} ${num2} = ${operacao(num1, num2)}`;
+      };
+
+      // Função de soma
+      const soma = (num1, num2) => num1 + num2;
+      // Função de subtração
+      const subtracao = (num1, num2) => num1 - num2;
+      // Função de multiplicação
+      const multiplicacao = (num1, num2) => num1 * num2;
+
+      // Exibe o resultado da soma de 2 e 2
+      console.log(calcular(2, 2, soma)); // O cálculo de 2 e 2 é 4
+      // Exibe o resultado da subtração de 2 e 2
+      console.log(calcular(2, 2, subtracao)); // O cálculo de 2 e 2 é 0
+      // Exibe o resultado da multiplicação de 2 e 10
+      console.log(calcular(2, 10, multiplicacao)); // O cálculo de 2 e 10 é 20
+    </script>
+  </body>
+</html>

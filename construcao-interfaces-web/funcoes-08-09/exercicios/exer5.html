@@ -1,0 +1,34 @@
+<!-- 5. Crie uma função fatorial que receba um número e retorne o seu fatorial. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fatorial</title>
+  </head>
+  <body>
+    <h1 id="fatorial"></h1>
+
+    <script>
+      // Solicita ao usuário que informe um número e converte para tipo Number
+      const numero = Number(prompt("Informe número:"));
+
+      // Declara a função fatorial que recebe um número como parâmetro
+      function fatorial(numero) {
+        // Inicializa a variável fatorial com valor 1
+        let fatorial = 1;
+        // Loop de i começando do número até 1, decrementando
+        for (let i = numero; i >= 1; i--) {
+          // Multiplica o valor atual de fatorial por i
+          fatorial *= i;
+        }
+        // Retorna o resultado do fatorial
+        return fatorial;
+      }
+
+      // Exibe o resultado do fatorial no elemento com id "fatorial"
+      document.querySelector("#fatorial").innerHTML = fatorial(numero);
+    </script>
+  </body>
+</html>

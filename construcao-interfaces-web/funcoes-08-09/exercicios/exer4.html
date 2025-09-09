@@ -1,0 +1,49 @@
+<!-- 4. Crie uma função maior que receba três números e retorne o maior entre eles. -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maior</title>
+  </head>
+  <body>
+    <h1 id="maior"></h1>
+    <script>
+      // function maior(a, b, c) {}
+      // Comentário de função não utilizada, que poderia receber três números e retornar o maior
+
+      const numero1 = Number(prompt("Informe o primeiro número"));
+      // Solicita ao usuário o primeiro número e converte para tipo numérico
+
+      const numero2 = Number(prompt("Informe o segundo número"));
+      // Solicita ao usuário o segundo número e converte para tipo numérico
+
+      const numero3 = Number(prompt("Informe o terceiro número"));
+      // Solicita ao usuário o terceiro número e converte para tipo numérico
+
+      let maior = (a, b, c) => {
+        // Declara uma função arrow que recebe três parâmetros (a, b, c)
+        if (a > b && a > c) {
+          // Verifica se 'a' é maior que 'b' e 'c'
+          return `O valor ${a} é o maior`;
+          // Retorna mensagem informando que 'a' é o maior
+        } else if (b > a && b > c) {
+          // Verifica se 'b' é maior que 'a' e 'c'
+          return `O valor ${b} é o maior`;
+          // Retorna mensagem informando que 'b' é o maior
+        } else {
+          // Caso contrário, considera que 'c' é o maior
+          return `O valor ${c} é o maior`;
+          // Retorna mensagem informando que 'c' é o maior
+        }
+      };
+
+      document.querySelector("#maior").innerHTML = maior(
+        numero1,
+        numero2,
+        numero3
+      );
+    </script>
+  </body>
+</html>

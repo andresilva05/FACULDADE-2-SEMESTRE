@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções</title>
+</head>
+<body>
+    
+    <script>
+
+        // function soma(a, b){
+        //     return a + b;
+        // }
+
+        // // resultado recebe a referência à função soma
+        // let resultado = soma;
+
+        // console.log(resultado);
+
+        // função anônima
+        // let soma = function (x, y) { 
+        //     return x + y
+        // };
+
+        // alert('Soma = ' + soma(2, 3));
+
+        // let novaSoma = soma
+
+        // console.log('Nova soma = ' + novaSoma(4, 5));
+
+
+        // arrow function
+
+        let nomeCompleto = (nome, sobrenome) => nome + ' ' + sobrenome;
+
+        console.log(nomeCompleto('João', 'Pereira'));
+
+        let result = (idade) => {
+            if (idade >= 18)
+                return 'Maior de idade';
+            else
+                return 'Menor de idade';
+        };
+
+        console.log(result(70));
+        console.log(result(15));
+
+    </script>
+
+</body>
+</html>

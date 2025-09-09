@@ -1,0 +1,33 @@
+<!-- 3. Crie uma função parOuImpar que receba um número e retorne "Par" se for par ou
+"Ímpar" se for ímpar. -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Par Ou Impar</title>
+  </head>
+  <body>
+    <h1 id="parOuImpar"></h1>
+
+    <script>
+      // Solicita ao usuário que digite um número e converte para tipo Number
+      const numero = Number(prompt("Digite o valor de um número:"));
+
+      // Função que verifica se o número é par ou ímpar
+      function parOuImpar(numero) {
+      // Se o resto da divisão por 2 for zero, é par
+      if (numero % 2 === 0) {
+        return "Número é par";
+      } else {
+        // Se não, é ímpar
+        return "Número é ímpar";
+      }
+      }
+
+      // Exibe o resultado na tag <h1> com id "parOuImpar"
+      document.querySelector("#parOuImpar").innerHTML = parOuImpar(numero);
+    </script>
+  </body>
+</html>

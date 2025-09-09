@@ -1,0 +1,26 @@
+<!-- 6. Crie uma função anônima atribuída a uma variável chamada quadrado que retorne o
+quadrado de um número. -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>anonima</title>
+  </head>
+  <body>
+    <script>
+      // Define uma constante chamada 'numero' e atribui o valor 10
+      const numero = 10;
+
+      // Cria uma função anônima atribuída à variável 'quadrado' que retorna o quadrado de um número
+      let quadrado = function (numero) {
+      // Retorna o resultado da multiplicação do número por ele mesmo
+      return numero * numero;
+      };
+
+      // Exibe no console o resultado da função 'quadrado' passando o valor da constante 'numero'
+      console.log(quadrado(numero));
+    </script>
+  </body>
+</html>

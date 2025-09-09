@@ -1,0 +1,27 @@
+<!-- 8. Utilizando parâmetro Rest, crie uma função somaTotal que receba um número
+indefinido de parâmetros e retorne a soma de todos. -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Função somaTotal recebe um número indefinido de parâmetros usando o operador rest (...numeros)
+      function somaTotal(...numeros) {
+        let total = 0; // Inicializa a variável total com zero
+        // Percorre o array numeros e soma cada elemento ao total
+        for (let i = 0; i < numeros.length; i++) {
+          total += numeros[i]; // Adiciona o valor atual ao total
+        }
+        return total; // Retorna o valor total da soma
+      }
+
+      // Exibe no console o resultado da soma dos números 2, 3, 5 e 8
+      console.log(somaTotal(2, 3, 5, 8));
+    </script>
+  </body>
+</html>

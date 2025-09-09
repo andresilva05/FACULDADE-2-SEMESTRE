@@ -1,0 +1,33 @@
+<!-- 2. Crie uma função soma que receba dois números como parâmetros e retorne a
+soma. -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soma</title>
+  </head>
+  <body>
+    <h1 id="soma"></h1>
+
+    <script>
+      // Solicita ao usuário que informe o primeiro número e converte para tipo Number
+      const num1 = Number(prompt("Informe o primeiro número: "));
+
+      // Solicita ao usuário que informe o segundo número e converte para tipo Number
+      const num2 = Number(prompt("Informe o segundo número: "));
+
+      // Declara uma função chamada soma que recebe dois parâmetros e retorna a soma deles
+      function soma(a, b) {
+        return a + b;
+      }
+
+      // Cria uma mensagem usando template string, mostrando os números informados e o resultado da soma
+      const mensagem = `O valor de ${num1} + ${num2} é = ${soma(num1, num2)}`;
+
+      // Seleciona o elemento com id "soma" na página e insere a mensagem como conteúdo HTML
+      document.querySelector("#soma").innerHTML = mensagem;
+    </script>
+  </body>
+</html>

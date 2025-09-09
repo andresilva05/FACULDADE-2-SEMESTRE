@@ -1,0 +1,33 @@
+<!-- 7. Função com argumento opcional: Crie uma função mensagem que receba um nome
+e uma saudação opcional (padrão = "Olá"). Exemplo:
+mensagem("Ana") → "Olá, Ana"
+mensagem("Carlos", "Bem-vindo") → "Bem-vindo, Carlos" -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Funcao com argumento</title>
+  </head>
+  <body>
+    <h1 id="saudacao"></h1>
+
+    <script>
+      const nome = prompt("Informe seu nome");
+
+      const argumento = prompt("Informe a saudação desejada");
+
+      function saudacao(nome, argumento) {
+        if (!argumento) {
+          argumento = "Olá";
+          return `${argumento}, ${nome}`;
+        } else {
+          return `${argumento}, ${nome}`;
+        }
+      }
+
+      document.querySelector("#saudacao").innerHTML = saudacao(nome, argumento);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!-- 1. Crie uma função chamada saudacao que receba um nome como parâmetro e
+retorne a frase: "Olá, [nome]!". -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saudação</title>
+  </head>
+  <body>
+    <h1 id="nomeSaudacao"></h1>
+
+    <script>
+      const nomeUsuario = prompt("Informe seu nome:");
+
+      function saudacao(nome) {
+        return nome;
+      }
+
+      const mensagem = `Olá, ${saudacao(nomeUsuario)}!`;
+
+      document.querySelector("#nomeSaudacao").innerHTML = mensagem;
+    </script>
+  </body>
+</html>
