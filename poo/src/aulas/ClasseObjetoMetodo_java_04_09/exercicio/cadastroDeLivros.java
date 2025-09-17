@@ -12,39 +12,28 @@ public class cadastroDeLivros {
     public static void main(String[] args) {
 
         Autor autorLivro = new Autor();
-        autorLivro.email = "autor@email.com";
-        autorLivro.nome = "João Ramalho";
-        autorLivro.cpf = "123456789";
+        autorLivro.setEmail("autor@email.com");
+        autorLivro.setNome("João Ramalho");
+        autorLivro.setCpf("123456789");
 
 
         Livro livro = new Livro();
-        livro.nome = "\nIntrodução a POO";
-        livro.descricao = "Aprendendo a programação orientada a objetos";
-        livro.valor = 59.90;
-        livro.isbn = "978-8588062894";
-        livro.emprestado = true;
-
-        livro.autor = autorLivro;
-
+        livro.setNome("\nIntrodução a POO");
+        livro.setDescricao("Aprendendo a programação orientada a objetos");
+        livro.setValor(59.90);
+        livro.setIsbn("978-8588062894");
+        livro.setEmprestado(true);
+        livro.setAutor(autorLivro);
+        livro.mostrarDetalhes();
+        if (!livro.aplicaDesconto(0.5)) {
+            System.out.println("O valor máximo do desconto é de 50%");
+        }
+        System.out.println("O valor após o desconto: R$" + livro.getValor());
         livro.mostrarDetalhes();
 
-        System.out.println("\n=== Detalhes do Livro ===");
-        System.out.println("Nome: " + livro.nome);
-        System.out.println("Descrição: " + livro.descricao);
-        System.out.println("Valor: R$" + livro.valor);
-        System.out.println("ISBN: " + livro.isbn);
 
-        Livro outrolivro = new Livro();
-        outrolivro.nome = "POO: Uma abordagem abrangente";
-        outrolivro.editora = "Seu zé";
-        outrolivro.descricao = "Outro livro que aborda POO";
-        livro.totalPaginas = 145;
-        outrolivro.valor = 39.90;
-        outrolivro.isbn = "123-765283748";
-        outrolivro.emprestado = false;
-
-        outrolivro.mostrarDetalhes();
-
-
+        Livro livro2 = new Livro(autorLivro);
+       // System.out.println(livro2.getAutor().getNome());
+        livro2.mostrarDetalhes();
     }
 }
