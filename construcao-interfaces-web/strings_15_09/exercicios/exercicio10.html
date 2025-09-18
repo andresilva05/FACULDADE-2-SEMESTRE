@@ -1,0 +1,31 @@
+<!-- 10. Peça ao usuário para digitar uma frase e uma palavra. Conte quantas vezes essa 
+palavra aparece na frase. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let frase = prompt("Digite uma frase.");
+
+      frase = frase.toLowerCase();
+      let palavra = prompt("Digite uma palavra.");
+
+      palavra = palavra.toLowerCase();
+      let palavraSplit = frase.split(" ");
+
+      let contador = 0;
+
+      for (let i = 0; i < palavraSplit.length; i++) {
+        if (palavra == palavraSplit[i]) {
+          contador++;
+        }
+      }
+      console.log(`A palavra ${palavra}, apareceu ${contador} vezes na frase.`);
+    </script>
+  </body>
+</html>

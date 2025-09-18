@@ -1,0 +1,27 @@
+<!-- 7.  Peça ao usuário para digitar uma frase e uma palavra. Mostre no console a posição 
+(índice)  da  primeira  ocorrência  da  palavra  na  frase,  ou  informe  se  não  foi 
+encontrada. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let frase = prompt("Digite uma frase:");
+
+      let palavra = prompt("Digite uma palavra:");
+
+      let indice =  frase.indexOf(palavra);
+
+      if (indice >= 0) {
+        console.log(`O primeiro índice da palavra é ${indice}`);
+      } else {
+        console.log("Palavra não encontrada");
+      }
+    </script>
+  </body>
+</html>

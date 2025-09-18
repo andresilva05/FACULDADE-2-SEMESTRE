@@ -1,0 +1,114 @@
+1️⃣ Strings
+
+O que são: Textos armazenados em variáveis.
+
+Como declarar:
+
+let texto1 = "Olá";      // aspas duplas
+let texto2 = 'Mundo';    // aspas simples
+let texto3 = `Olá Mundo`; // template string (crase)
+
+
+Template Strings / Literals
+
+Permitem aspas simples e duplas dentro da string sem escapar.
+
+Permitem múltiplas linhas.
+
+Permitem interpolação de variáveis:
+
+let nome = "André";
+let saudacao = `Olá, ${nome}! Bem-vindo.`;
+console.log(saudacao); // "Olá, André! Bem-vindo."
+
+2️⃣ Tamanho da string
+let texto = "JavaScript";
+console.log(texto.length); // 10
+
+3️⃣ Acessando caracteres
+Métodos:
+let texto = "JavaScript";
+
+console.log(texto[0]);       // 'J'
+console.log(texto.charAt(0)); // 'J'
+console.log(texto.at(-1));    // 't' (último caractere)
+
+
+at() aceita índices negativos.
+
+[] e charAt() são apenas leitura (texto[0] = "A" não muda a string).
+
+4️⃣ Concatenação
+let a = "Olá";
+let b = "Mundo";
+
+console.log(a + " " + b);       // "Olá Mundo"
+console.log(a.concat(" ", b));  // "Olá Mundo"
+
+5️⃣ Extraindo partes da string
+let texto = "JavaScript";
+
+console.log(texto.slice(0, 4));      // "Java"
+console.log(texto.substring(4, 10)); // "Script"
+console.log(texto.substr(4, 6));     // "Script"
+
+
+slice aceita índices negativos.
+
+substring não aceita índices negativos.
+
+substr(inicio, tamanho) define quantidade de caracteres.
+
+6️⃣ Maiúsculas e minúsculas
+let texto = "javascript";
+
+console.log(texto.toUpperCase()); // "JAVASCRIPT"
+console.log(texto.toLowerCase()); // "javascript"
+
+7️⃣ Substituindo conteúdo
+let texto = "JavaScript é divertido";
+
+console.log(texto.replace("divertido", "incrível")); // só substitui a 1ª ocorrência
+console.log(texto.replaceAll("a", "A"));            // substitui todas
+
+8️⃣ Converter string em array
+let texto = "Olá Mundo";
+console.log(texto.split());    // ["Olá Mundo"]
+console.log(texto.split(" ")); // ["Olá", "Mundo"]
+console.log(texto.split(""));  // ["O", "l", "á", " ", "M", "u", "n", "d", "o"]
+
+9️⃣ Buscando conteúdo
+indexOf / lastIndexOf
+let texto = "JavaScript";
+console.log(texto.indexOf("S"));      // 4 (primeira ocorrência)
+console.log(texto.lastIndexOf("a"));  // 3 (última ocorrência)
+
+includes
+console.log(texto.includes("Java")); // true
+console.log(texto.includes("Python"));// false
+
+startsWith / endsWith
+console.log(texto.startsWith("Java")); // true
+console.log(texto.endsWith("Script")); // true
+
+match (regex)
+let texto = "O JavaScript é legal";
+console.log(texto.match(/JavaScript/)); // ["JavaScript"]
+
+Resumo rápido da aula
+
+Strings são imutáveis → métodos não alteram a original.
+
+Template Strings facilitam interpolação e múltiplas linhas.
+
+Acessar caracteres: [ ], charAt(), at().
+
+Extração: slice(), substring(), substr().
+
+Substituição: replace(), replaceAll().
+
+Transformações: toUpperCase(), toLowerCase().
+
+Conversão: split() transforma em array.
+
+Busca: indexOf(), lastIndexOf(), includes(), startsWith(), endsWith(), match().

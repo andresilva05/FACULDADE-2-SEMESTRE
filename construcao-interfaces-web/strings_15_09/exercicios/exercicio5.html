@@ -1,0 +1,31 @@
+<!-- 5.  Peça  ao usuário para digitar uma frase e uma palavra para substituir. Substitua a 
+palavra antiga por uma nova palavra e exiba a frase modificada. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Solicita ao usuário que digite uma frase
+      let frase = prompt("Digite uma frase: ");
+
+      // Pergunta qual palavra será substituída
+      let palavraTroca = prompt("Qual palavra da frase deseja substituir? ");
+
+      // Pergunta qual palavra será usada para substituir
+      let novaPalavra = prompt(
+        "Qual palavra irá adicionar no lugar da trocada?"
+      );
+
+      // Substitui a palavra antiga pela nova na frase
+      frase = frase.replace(palavraTroca, novaPalavra);
+
+      // Exibe a frase modificada no console
+      console.log(`Frase modificada: ${frase}`);
+    </script>
+  </body>
+</html>

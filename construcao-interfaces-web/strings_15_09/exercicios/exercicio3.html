@@ -1,0 +1,24 @@
+<!-- 3.  Peça  ao  usuário  para  digitar  uma  frase  e  uma  palavra.  Mostre  no  console  se  a 
+palavra digitada existe na frase. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let frase = prompt("Digite uma frase: ");
+
+      let palavra = prompt("Digite uma palavra:");
+
+      if (frase.includes(palavra) == true) {
+        console.log(`A palavra "${palavra}" existe na frase "${frase}"`);
+      } else {
+        console.log("Palavra não encontrada");
+      }
+    </script>
+  </body>
+</html>
