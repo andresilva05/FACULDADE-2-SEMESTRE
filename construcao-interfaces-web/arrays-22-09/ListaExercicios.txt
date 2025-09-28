@@ -1,0 +1,29 @@
+Lista de Exercícios 5 - ARQCIWB
+
+1. Crie um array com os nomes de 5 frutas. Imprima no console o primeiro e o último
+elemento do array.
+
+2. Crie um array vazio. Adicione 3 números ao array usando push(). Remova o último
+número usando pop() e imprima o array final.
+
+3. Crie um array com os nomes de 5 cores. Use forEach() para imprimir cada cor em
+letra maiúscula no console.
+
+4. Crie um array de números [10, 20, 30, 40, 50]. Verifique se o número 30 está
+presente no array usando includes(). Use indexOf() para descobrir a posição de 40.
+
+5. Crie um array [5, 1, 10, 3]. Ordene os números em ordem crescente usando sort()
+com função de comparação.
+
+6. Crie um array de números [1, 2, 3, 4, 5]. Pesquise sobre a função map(). Crie um
+novo array multiplicando cada número por 2 usando map().
+
+7. Crie um array [10, 25, 30, 45, 50]. Pesquise sobre as funções filter() e reduce(). Use
+filter() para criar um novo array apenas com números maiores que 30. Use reduce()
+para somar todos os números do array original.
+
+8. Crie dois arrays: arr1 = [1, 2, 3] e arr2 = [4, 5, 6]. Combine os dois arrays em um
+novo array usando concat(). Pesquise sobre o operador spread (...) e utilize-o para
+fazer a mesma operação.
+
+9. Crie um array [1, 2, 2, 3, 4, 4, 5]. Crie um novo array sem elementos duplicados.
