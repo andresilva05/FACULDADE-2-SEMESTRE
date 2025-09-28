@@ -1,0 +1,183 @@
+Estudo – Lista Encadeada Ordenada (C)
+1️⃣ Conceitos básicos
+
+HEAD → ponteiro para o primeiro nó da lista.
+
+Nó (Node) → contém:
+
+data → valor do nó
+
+nextPtr → ponteiro para o próximo nó (ou NULL se for o último)
+
+newPtr → ponteiro para o nó que será inserido
+
+currentPtr → ponteiro usado para percorrer a lista
+
+previousPtr → ponteiro para o nó anterior durante a travessia
+
+Lista ordenada:
+
+Mantém os valores em ordem crescente (alfabética ou numérica)
+
+Inserção respeita essa ordem
+
+Permite duplicatas (valores iguais são inseridos antes do nó existente)
+
+2️⃣ Inserção em lista ordenada – passos
+Passo 1 – Inicializar ponteiros
+newPtr → valor a inserir
+currentPtr → HEAD
+previousPtr → NULL
+
+Passo 2 – Percorrer a lista
+while (currentPtr != NULL && value > currentPtr->data) {
+    previousPtr = currentPtr;
+    currentPtr = currentPtr->nextPtr;
+}
+
+
+O loop avança enquanto o valor a inserir for maior que currentPtr->data.
+
+Ao final:
+
+previousPtr aponta para o nó anterior à posição de inserção
+
+currentPtr aponta para o nó que viria depois do novo nó (ou NULL se for o último)
+
+3️⃣ Inserção efetiva
+Caso início da lista
+if (previousPtr == NULL) {
+    newPtr->nextPtr = HEAD;
+    HEAD = newPtr;
+}
+
+
+newPtr vira o novo HEAD
+
+Aponta para o antigo primeiro nó
+
+Caso meio/fim da lista
+else {
+    previousPtr->nextPtr = newPtr;
+    newPtr->nextPtr = currentPtr;
+}
+
+
+previousPtr aponta para newPtr
+
+newPtr aponta para currentPtr
+
+Mantém a ordem da lista
+
+4️⃣ Exemplos passo a passo
+Exemplo 1 – Inserir no final
+
+Lista atual:
+
+HEAD → ['A'] → ['B'] → ['C'] → NULL
+Inserir: 'D'
+
+
+Inicialização:
+
+newPtr → 'D'
+currentPtr → 'A'
+previousPtr → NULL
+
+
+Iterações do loop:
+
+'D' > 'A' → previousPtr = 'A', currentPtr = 'B'
+
+'D' > 'B' → previousPtr = 'B', currentPtr = 'C'
+
+'D' > 'C' → previousPtr = 'C', currentPtr = NULL
+
+Inserção (else):
+
+previousPtr->nextPtr = newPtr
+newPtr->nextPtr = NULL
+
+
+Resultado:
+
+HEAD → ['A'] → ['B'] → ['C'] → ['D'] → NULL
+
+Exemplo 2 – Inserir duplicata
+
+Lista atual:
+
+HEAD → ['A'] → ['B'] → ['C'] → ['D'] → NULL
+Inserir: 'B'
+
+
+Inicialização:
+
+newPtr → 'B'
+currentPtr → 'A'
+previousPtr → NULL
+
+
+Loop:
+
+'B' > 'A' → previousPtr = 'A', currentPtr = 'B'
+
+'B' > 'B' → falso → loop para
+
+Inserção (else):
+
+previousPtr->nextPtr = newPtr
+newPtr->nextPtr = currentPtr
+
+
+Resultado:
+
+HEAD → ['A'] → ['B'(novo)] → ['B'(antigo)] → ['C'] → ['D'] → NULL
+
+
+Duplicata inserida antes do nó existente com o mesmo valor
+
+Exemplo 3 – Inserir no início
+
+Lista atual:
+
+HEAD → ['C'] → NULL
+Inserir: 'A'
+
+
+Inicialização:
+
+newPtr → 'A'
+currentPtr → 'C'
+previousPtr → NULL
+
+
+Loop: value > currentPtr->data → 'A' > 'C'? Falso → não roda
+
+Inserção (if início):
+
+newPtr->nextPtr = HEAD
+HEAD = newPtr
+
+
+Resultado:
+
+HEAD → ['A'] → ['C'] → NULL
+
+5️⃣ Lógica dos ponteiros resumida
+Ponteiro	Função
+HEAD	Aponta para o primeiro nó da lista
+newPtr	Nó que será inserido
+currentPtr	Nó atual durante a travessia
+previousPtr	Nó anterior ao currentPtr
+
+Regras rápidas:
+
+Inserção início → previousPtr == NULL
+
+Inserção meio/fim → previousPtr != NULL
+
+Sempre atualizar:
+
+previousPtr->nextPtr = newPtr
+newPtr->nextPtr = currentPtr

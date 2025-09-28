@@ -1,0 +1,236 @@
+Lista Inicial
+startPtr → NULL
+
+
+A lista está vazia, não tem nenhum nó.
+
+Inserção: 't'
+
+Passo 1 — Inicializando ponteiros
+
+newPtr → 't'
+currentPtr → startPtr → NULL
+previousPtr → NULL
+
+
+Passo 2 — Loop
+
+while (currentPtr != NULL && value > currentPtr->data)
+
+
+❌ currentPtr é NULL → loop não roda
+
+Passo 3 — Inserção no início (previousPtr == NULL)
+
+newPtr->nextPtr = startPtr → NULL
+startPtr = newPtr
+
+
+Desenho da lista
+
+startPtr → ['t' | next → ∅]
+
+Inserção: 'q'
+
+Inicialização
+
+newPtr → 'q'
+currentPtr → startPtr → 't'
+previousPtr → NULL
+
+
+Loop
+
+'q' > 't'? ❌ falso → loop não roda
+
+
+Inserção início (previousPtr == NULL)
+
+newPtr->nextPtr = startPtr → 't'
+startPtr = newPtr
+
+
+Lista
+
+startPtr → ['q' | next → ['t' | next → ∅]]
+
+Inserção: 'o'
+
+Inicialização
+
+newPtr → 'o'
+currentPtr → startPtr → 'q'
+previousPtr → NULL
+
+
+Loop
+
+'o' > 'q'? ❌ falso
+
+
+Inserção início
+
+newPtr->nextPtr = startPtr → 'q'
+startPtr = newPtr
+
+
+Lista
+
+startPtr → ['o' | next → ['q' | next → ['t' | next → ∅]]]
+
+Inserção: 'a'
+
+Inicialização
+
+newPtr → 'a'
+currentPtr → startPtr → 'o'
+previousPtr → NULL
+
+
+Loop
+
+'a' > 'o'? ❌ falso
+
+
+Inserção início
+
+newPtr->nextPtr = startPtr → 'o'
+startPtr = newPtr
+
+
+Lista
+
+startPtr → ['a' | next → ['o' | next → ['q' | next → ['t' | next → ∅]]]]
+
+Inserção: 'c'
+
+Inicialização
+
+newPtr → 'c'
+currentPtr → startPtr → 'a'
+previousPtr → NULL
+
+
+Loop
+
+'c' > 'a'? ✅ verdadeiro
+previousPtr = currentPtr → 'a'
+currentPtr = currentPtr->nextPtr → 'o'
+
+'c' > 'o'? ❌ falso → loop para
+
+
+Inserção no meio
+
+previousPtr->nextPtr = newPtr → 'c'
+newPtr->nextPtr = currentPtr → 'o'
+
+
+Lista
+
+startPtr → ['a' | next → ['c' | next → ['o' | next → ['q' | next → ['t' | next → ∅]]]]]
+
+Inserção: 'k'
+
+Inicialização
+
+newPtr → 'k'
+currentPtr → startPtr → 'a'
+previousPtr → NULL
+
+
+Loop
+
+'k' > 'a'? ✅ previousPtr='a', currentPtr='c'
+'k' > 'c'? ✅ previousPtr='c', currentPtr='o'
+'k' > 'o'? ❌ loop para
+
+
+Inserção no meio
+
+previousPtr->nextPtr = newPtr → 'k'
+newPtr->nextPtr = currentPtr → 'o'
+
+
+Lista
+
+startPtr → ['a' | next → ['c' | next → ['k' | next → ['o' | next → ['q' | next → ['t' | next → ∅]]]]]] 
+
+Inserção: 'b'
+
+Inicialização
+
+newPtr → 'b'
+currentPtr → startPtr → 'a'
+previousPtr → NULL
+
+
+Loop
+
+'b' > 'a'? ✅ previousPtr='a', currentPtr='c'
+'b' > 'c'? ❌ falso → loop para
+
+
+Inserção no meio
+
+previousPtr->nextPtr = newPtr → 'b'
+newPtr->nextPtr = currentPtr → 'c'
+
+
+Lista
+
+startPtr → ['a' | next → ['b' | next → ['c' | next → ['k' | next → ['o' | next → ['q' | next → ['t' | next → ∅]]]]]]]
+
+Exclusão: 'q'
+
+Inicialização
+
+currentPtr → startPtr → 'a'
+previousPtr → NULL
+
+
+Loop até encontrar 'q'
+
+'a' → 'b' → 'c' → 'k' → 'o' → 'q' ✅
+
+
+Remover nó
+
+previousPtr->nextPtr = currentPtr->nextPtr → 't'
+
+
+Lista
+
+startPtr → ['a' → 'b' → 'c' → 'k' → 'o' → 't']
+
+Exclusão: 'c'
+
+Loop até encontrar 'c'
+
+'a' → 'b' → 'c' ✅
+
+
+Remover nó
+
+previousPtr->nextPtr = currentPtr->nextPtr → 'k'
+
+
+Lista
+
+startPtr → ['a' → 'b' → 'k' → 'o' → 't']
+
+Exclusão: 'b'
+
+Loop até encontrar 'b'
+
+'a' → 'b' ✅
+
+
+Remover nó
+
+previousPtr->nextPtr = currentPtr->nextPtr → 'k'
+
+
+Lista Final
+
+startPtr → ['a' → 'k' → 'o' → 't']

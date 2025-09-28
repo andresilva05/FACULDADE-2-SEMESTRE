@@ -1,0 +1,135 @@
+Grupo de Exercícios 1 – Animais
+1. Hierarquia de classes
+
+Classe Animal (pai): atributos e comportamentos comuns → nome, idade, emitirSom().
+
+Cachorro, Cavalo e Preguiça (filhas): cada uma especializa o comportamento.
+
+Cachorro: som = “latir”, correr.
+
+Cavalo: som = “relinchar”, correr.
+
+Preguiça: som = “grunhir”, subir em árvores.
+
+👉 A ideia é evitar repetição. Nome e idade ficam na classe Animal, cada subclasse só implementa o que muda.
+
+2. Programa com polimorfismo
+
+Crie objetos Cachorro, Cavalo, Preguiça.
+
+Coloque todos em uma referência de tipo Animal.
+
+Chame emitirSom() sem se preocupar com qual é o animal → cada um responde do seu jeito.
+
+3. Classe Veterinário
+
+Método examinar(Animal animal).
+
+Ele deve chamar o método emitirSom() do animal passado.
+
+Teste chamando esse método com um cachorro, cavalo e preguiça.
+
+4. Classe Zoológico
+
+Tenha um array de 10 jaulas (Animal[]).
+
+Coloque em cada posição um animal (cachorro, cavalo ou preguiça).
+
+Percorra o array chamando:
+
+emitirSom()
+
+Se for cachorro/cavalo → correr()
+
+Se for preguiça → subirEmArvores()
+
+👉 Aqui você aplica o polimorfismo e também identifica o tipo para chamar comportamentos específicos.
+
+
+
+
+
+Grupo de Exercícios 2 – Funcionários e Escolaridade
+5. Registro da vida acadêmica
+
+Classe Funcionário (pai): atributos básicos → nome, codigoFuncional.
+
+Crie subclasses ou níveis que adicionam informações:
+
+Funcionário básico: só nome e código.
+
+Ensino Básico: adiciona escola.
+
+Ensino Médio: também escola.
+
+Graduação: universidade.
+
+👉 O princípio é incrementar as informações conforme aumenta a escolaridade.
+
+6. Renda por escolaridade
+
+Todo funcionário começa com R$ 1000.
+
+Ensino básico: +10% sobre a renda anterior.
+
+Ensino médio: +50% sobre a renda do básico.
+
+Graduação: +100% sobre a renda do médio.
+
+👉 Aqui, cada nível pode ter um método que calcula a renda com base no anterior.
+
+7. Simulação da empresa
+
+Crie um array com 10 funcionários.
+
+Distribuição: 40% ensino básico, 40% ensino médio, 20% graduação.
+
+Calcule:
+
+Custo total da empresa.
+
+Custo por nível (quanto gastam com básico, médio e superior).
+
+Grupo de Exercícios 3 – Ar-condicionado
+8. Sistema de controle de estoque
+
+Pense nas características comuns: série, BTU, cor, voltagem, se é quente/frio, se tem controle remoto.
+
+Classe base: ArCondicionado.
+
+Subclasses: Parede, Split, Automotivo (cada uma pode ter algo diferente, mas se não for exigido, todas usam os mesmos atributos).
+
+Construtor: inicializa todos os atributos.
+
+No main, crie objetos com os dados da tabela fornecida.
+
+👉 Aqui o foco é organizar a modelagem e inicializar corretamente.
+
+Grupo de Exercícios 4 – Publicações
+9. Classes de publicações
+
+Editora: tem nome e site. Deve contar quantas publicações já foram feitas por ela.
+
+Publicacao (classe base): atributos comuns → nome, assunto, edição, editora.
+
+Livro (subclasse): além disso, tem autores (array).
+
+Revista (subclasse): além disso, tem periodicidade.
+
+Relação: Livro e Revista herdam de Publicacao.
+
+Sempre que uma publicação é criada, a Editora aumenta seu contador de publicações.
+
+No main, crie as publicações e exiba o total de cada editora.
+
+💡 Dicas gerais para todos os grupos
+
+Sempre identifique o que é comum (vai na classe pai).
+
+O que é específico (fica na subclasse).
+
+Use polimorfismo quando quiser tratar todos de forma genérica.
+
+Use sobrescrita quando cada subclasse tiver comportamento diferente.
+
+Use arrays para simular grupos (10 animais, 10 funcionários, etc.).
