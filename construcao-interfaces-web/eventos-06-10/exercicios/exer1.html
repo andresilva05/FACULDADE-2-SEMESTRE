@@ -1,0 +1,26 @@
+<!-- ● Criar um botão que, ao ser clicado, exibe a data e hora atual. -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="data"></h1>
+
+    <button id="botao1">Clique aqui</button>
+
+    <script>
+      let botao = document.querySelector("#botao1");
+
+      function exibeData() {
+        let dia = new Date();
+
+        document.querySelector("#data").innerHTML = dia;
+      }
+      botao.addEventListener("click", exibeData);
+    </script>
+  </body>
+</html>

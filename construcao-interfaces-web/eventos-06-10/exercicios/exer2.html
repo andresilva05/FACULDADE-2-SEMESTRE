@@ -1,0 +1,29 @@
+<!-- ● Alterar a cor de fundo da página ao passar o mouse sobre um parágrafo. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="paragrafo">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit libero
+      similique sapiente non dolor dolorem pariatur officia adipisci modi facere
+      culpa laboriosam, est tempora praesentium nisi, quasi maiores aut
+      necessitatibus.
+    </p>
+
+    <script>
+      const p = document.getElementById("paragrafo");
+
+      p.addEventListener("mouseover", () => {
+        document.body.style.background = "yellow";
+      });
+      p.addEventListener("mouseout", () => {
+        document.body.style.background = "white";
+      });
+    </script>
+  </body>
+</html>

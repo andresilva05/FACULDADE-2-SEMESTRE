@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eventos</title>
+  </head>
+  <body>
+    <!-- Botão com alerta -->
+    <button onclick="alert('Cliquei!')">Clique em mim!</button>
+
+    <!-- Div que muda o conteúdo ao clicar -->
+    <div
+      id="demo"
+      onclick="document.querySelector('#demo').innerHTML = 'Clicou!';"
+    >
+      Clique aqui também
+    </div>
+
+    <h1 onmouseover="document.querySelector('h1').style.color = 'red';">
+      Titulo
+    </h1>
+
+    <script>
+      function mudaParagrafo() {
+        let p = document.querySelector("#par");
+
+        p.style.color = "blue";
+        p.style.backgroundColor = "green";
+      }
+    </script>
+
+    <p id="par" onclick="mudaParagrafo();">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut dolorem
+      aperiam illo id deleniti nam porro, aspernatur ullam ipsum beatae nemo.
+      Aspernatur enim labore eveniet suscipit veritatis similique et nobis?
+    </p>
+  </body>
+</html>

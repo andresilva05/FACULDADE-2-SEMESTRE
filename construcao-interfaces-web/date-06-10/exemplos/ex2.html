@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data</title>
+  </head>
+  <body>
+    <script>
+      function compareData() {
+        const hoje = new Date();
+
+        const nasc = document.querySelector("#data").value;
+
+        let gmt = "T00:00-03:00";
+
+        const dnasc = new Date(nasc + gmt);
+
+        //compara as datas
+
+        if (dnasc > hoje) {
+          console.log("Não pode!");
+          return false;
+        }
+
+        console.log("Data válida");
+
+        return false;
+      }
+      function getDate() {
+        const d = document.getElementById("data").value;
+        console.log(`Data capturada: ${d}`);
+
+        let gmt = "T00:00-03:00";
+        const data1 = new Date(d + gmt);
+
+        console.log(data1);
+
+        return false;
+      }
+    </script>
+    <!-- <form action="#" method="post" onsubmit="return getDate();"> -->
+    <form action="#" method="post" onsubmit="return compareData();">
+      <label for="data">Data:</label>
+      <input type="date" name="data" id="data" />
+      <br />
+      <input type="submit" value="Enviar" />
+    </form>
+  </body>
+</html>

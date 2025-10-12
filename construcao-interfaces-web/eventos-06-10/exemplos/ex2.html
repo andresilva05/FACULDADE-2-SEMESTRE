@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="botao1">Mudar background</button>
+
+    <script>
+      // Função que muda a cor do fundo
+      function mudaBack() {
+        document.body.style.backgroundColor = "yellow";
+      }
+
+      // Primeiro pegamos o elemento
+      let botao = document.querySelector("#botao1");
+
+      // Adicionamos o primeiro listener
+      botao.addEventListener("click", mudaBack);
+
+      // Adicionamos o segundo listener para inspecionar o evento
+      botao.addEventListener("click", function (e) {
+        console.log(e.target);
+        console.log(e.type);
+        console.log(e.currentTarget);
+      });
+
+      document.addEventListener("keypress", function (e) {
+        console.log(e.key);
+      });
+    </script>
+  </body>
+</html>

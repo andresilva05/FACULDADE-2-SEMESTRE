@@ -1,0 +1,30 @@
+1. Crie um objeto literal carro com as propriedades: marca, modelo e ano.
+a. Exiba no console a marca e o modelo do carro.
+b. Adicione uma nova propriedade cor ao objeto e exiba-a no console.
+c. Adicione um método detalhes() ao objeto carro que retorne uma string com
+todas as informações do carro (Ex.: "Marca: Toyota, Modelo: Corolla, Ano:
+2020, Cor: Prata").
+d. Chame o método e exiba o resultado no console.
+
+2. Crie uma função construtora Pessoa com os parâmetros nome, idade e profissao.
+a. Crie dois objetos usando a função construtora.
+b. Adicione um método saudar() que exiba "Olá, meu nome é [nome]".
+
+3. Dado o objeto pessoa = {nome: "Ana", idade: 25, cidade: "São Paulo"}, use um loop
+for..in para exibir todas as propriedades e seus valores no console.
+
+4. Com o mesmo objeto do exercício anterior, use Object.entries() para percorrer as
+propriedades e valores, e exiba-os no console no formato: "propriedade: valor".
+
+5. Crie um objeto livro = {titulo: "1984", autor: "George Orwell", ano: 1949}. Utilize
+desestruturação para extrair titulo e autor em variáveis separadas e exiba-as no
+console.
+
+6. Crie uma classe ContaBancaria com propriedades titular, saldo e métodos
+depositar(valor) e sacar(valor).
+a. Crie um objeto da classe e teste os métodos.
+b. Garanta que não seja possível sacar um valor maior que o saldo.
+
+7. Utilizando a classe ContaBancaria do exercício anterior, crie:
+a. Um getter chamado informacoes que retorna uma string com o titular e saldo.
+b. Um setter chamado alterarTitular que permite alterar o nome do titular.
