@@ -16,6 +16,6 @@ public class FuncionarioEnsinoBasico extends Funcionario {
     @Override
     public void mostrarDados() {
         super.mostrarDados();
-        System.out.println("Escola: " + escola);
+        System.out.println("Escola:  " + escola);
     }
 }
