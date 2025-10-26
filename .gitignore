@@ -25,5 +25,12 @@ out/
 .DS_Store
 Thumbs.db
 
+# Ignorar documentos e arquivos adicionais
 *.pdf
 *.docx
+*.jpg
+*.png
+*.zip
+*.pptx
+*.xml
+*.txt
