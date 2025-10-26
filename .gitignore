@@ -32,5 +32,5 @@ Thumbs.db
 *.png
 *.zip
 *.pptx
-*.xml
+workspace.xml
 *.txt
