@@ -1,4 +1,5 @@
-package pre_atividade_avaliativa_23_10.Exercicicio;
+package pre_atividade_avaliativa_23_10.Exercicio;
+
 
 // Classe responsável por gerenciar o catálogo de produtos
 public class ProductCatalog {

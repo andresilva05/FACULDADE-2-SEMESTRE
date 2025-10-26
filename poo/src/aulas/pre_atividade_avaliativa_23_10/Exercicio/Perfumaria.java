@@ -1,4 +1,5 @@
-package pre_atividade_avaliativa_23_10.Exercicicio;
+package pre_atividade_avaliativa_23_10.Exercicio;
+
 
 // Classe filha de Product, representando produtos de perfumaria
 public class Perfumaria extends Product {

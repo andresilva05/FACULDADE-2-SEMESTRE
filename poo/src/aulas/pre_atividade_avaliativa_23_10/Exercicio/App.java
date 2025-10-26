@@ -1,4 +1,4 @@
-package pre_atividade_avaliativa_23_10.Exercicicio;
+package pre_atividade_avaliativa_23_10.Exercicio;
 
 import java.util.Scanner;
 
