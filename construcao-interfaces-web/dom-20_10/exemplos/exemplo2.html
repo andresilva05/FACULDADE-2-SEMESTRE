@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+  </head>
+  <body>
+    <div class="container">
+      <button id="botao">Clique aqui!</button>
+    </div>
+
+    <script>
+      document.getElementById("botao").onclick = function (e) {
+        //criar o paragrafo
+
+        const p = document.createElement("p");
+        p.innerHTML = "Olá, pessoal!";
+
+        // Substituir o botão pelo parágrafo;
+
+        const botao = e.target;
+
+        botao.parentElement.replaceChild(p, botao);
+      };
+    </script>
+  </body>
+</html>
