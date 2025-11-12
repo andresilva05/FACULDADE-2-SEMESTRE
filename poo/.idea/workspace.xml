@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27b64ba3-6b00-4cde-a965-c330a94bbddc" name="Changes" comment="feat: Implementação completa do sistema de cadastro de produtos com herança, vetor catalogado e ordenação" />
+    <list default="true" id="27b64ba3-6b00-4cde-a965-c330a94bbddc" name="Changes" comment="feat: Implementação completa do sistema de cadastro de produtos com herança, vetor catalogado e ordenação">
+      <change afterPath="$PROJECT_DIR$/src/aulas/caixas_dialogo_30_10/ExemploCxDialogo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aulas/casos_06_11/Exemplo/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aulas/casos_06_11/Exemplo/Cachorro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aulas/casos_06_11/Exemplo/Gato.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aulas/casos_06_11/Exemplo/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,29 +48,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.App.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Area.executor&quot;: &quot;Run&quot;,
-    &quot;Application.CadastroDeLivros.executor&quot;: &quot;Run&quot;,
-    &quot;Application.CoordenadasPonto.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Intervalo.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.MediaPonderada.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ProdutoSimples.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;I:/Meu Drive/FACULDADE/2 SEMESTRE/poo/src/aulas/refatoracao_23_10&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.App.executor": "Run",
+    "Application.Area.executor": "Run",
+    "Application.CadastroDeLivros.executor": "Run",
+    "Application.CoordenadasPonto.executor": "Run",
+    "Application.ExemploCxDialogo.executor": "Run",
+    "Application.Intervalo.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.MediaPonderada.executor": "Run",
+    "Application.ProdutoSimples.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "I:/Meu Drive/FACULDADE/2 SEMESTRE/poo",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="I:\Meu Drive\FACULDADE\2 SEMESTRE\poo\src\aulas\refatoracao_23_10" />
