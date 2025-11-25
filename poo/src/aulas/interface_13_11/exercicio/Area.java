@@ -1,4 +1,6 @@
 package interface_13_11.exercicio;
 
-public class Area {
+public interface Area {
+
+    double area();
 }
